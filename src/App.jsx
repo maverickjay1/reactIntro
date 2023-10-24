@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import Characters from "./ComponentsSimpsons/Characters";
+
 class App extends Component {
-  state = {};
+  state = { simpsons: [] };
 
   async componentDidMount() {
     try {
@@ -17,7 +19,14 @@ class App extends Component {
 
   render() {
     console.log(this.state);
-    return <></>;
+    return (
+      <>
+        {this.state.simpsons.map((item) => {
+          return <Characters {...item} />;
+          console.log(item);
+        })}
+      </>
+    );
   }
 }
 
