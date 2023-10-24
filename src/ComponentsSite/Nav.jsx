@@ -14,6 +14,7 @@ class Nav extends Component {
         <Link text={"Bet Management"} />
         <Link text={"Live Bet Data"} />
         <Link text={"Historical Bet Data"} />
+        <Link text={"Data Query"} />
         <Link text={"Prediction Fundamentals"} />
       </nav>
     );
